@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            body{
+                font: Georgia;
+                font-size: 25px;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 50px;
+            }
+            .tabs {
+                font: Georgia;
+                font-size: 25px;
+                background-color: white;
+                border: lightgrey;
+            }
+            .tab1 { grid-area: Home; }
+            .tab2 { grid-area: Store; }
+            .tab3 { grid-area: FAQ/Inquiry; }
+            .tab4 { grid-area: Cart; }
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                'Home Store FAQ/Inquiry Cart';
+                margin: 0px 222px 5px 223px;
+            }
+                
+            .box {
+                font-size: 25px;
+                background-color: #aaeaffe3;
+                border: black;
+                border-radius: 5px;
+                padding: 5px 20px 15px 20px;
+                    
+            }
+            .box2 {
+                font-size: 25px;
+                background-color: #55c6ece3;
+                border: black;
+                border-radius: 5px;
+                padding: 5px 20px 15px 20px;
+            }
+
+            .cartbox{
+                border: 10px;
+                border-color: lightgrey;
+                background-color: white;
+                border-style: inset;
+                border-radius: 10px;
+                border-width: 10px;
+                position: absolute;
+                right: 100px;
+                top: 250px;
+                width: 200px;
+                height: 120px; 
+                padding: 25px 15px 250px 50px;          
+            }
+            .button1{
+                border: solid;
+                color: black;
+                border-width: 25xp;
+                padding: 15px 32px;
+                font-size: 35px;
+                position:absolute;
+                left:600px;
+                margin-bottom: 400px;
+            }
+   
+        </style>
+        <center><img src="PandaGaming.png" alt="Logo" style = "position: center"><br>
+            <div class="grid-container">
+            <div class="tabs">
+                <a class="tab1" href="Home.html">Home</a>
+                <a class="tab2" href="VideoGames.html">Store</a>
+                <a class="tab3" href="faqinquiry.html">FAQ/Contact</a>
+                <a class="tab4" href="Cart.html">Cart</a>
+            </div></center>
+        </div>
+        <h2>Leaving so soon?</h2>
+        </head>
+        <body>
+          <p>Thanks for shopping with us!</p>
+    <br>
+        <div class="box">
+        <center><h3>Billing Information</h3></center>
+        <label for="fname">Full Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="full name" style="width: 200px; height: 50px;"><br>
+            <br>
+           
+        <label for="email" > Email</label><br>
+        <input type="text" id="email" name="email" placeholder="name@example.com" style="width: 200px; height: 50px;"><br>
+            <br>
+            
+        <label for="adr"> Address</label><br>
+        <input type="text" id="adr" name="address" placeholder="81 College Circle Dr" style="width: 200px; height: 50px;"><br>
+            <br>
+            
+        <label for="city"> City</label><br>
+        <input type="text" id="city" name="city" placeholder="Dahlonega" style="width: 200px; height: 50px;"><br><br>
+
+        <label for="state"> State</label><br>
+        <input type="text" id="state" name="state" placeholder="Georgia" style="width: 200px; height: 50px;"><br><br>
+        
+        <label for="zip"> Zipcode</label><br>
+        <input type="text" id="zip" name="zip" placeholder="00000" style="width: 200px; height: 50px;"></div><br><br>
+
+        <div class="box2">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label><br><br>
+            <img src="Discover.png" alt="image" height=75px; width=100px>
+            <img src="visa.png" alt="image" height=75px width=125px;>
+            <img src="Capital_One.png" alt="image" height=80px width=150px;>
+            
+            <h3>Payment</h3>
+            <label for="cname">Name on Card</label><br>
+            <input type="text" id="cname" name="cardname" placeholder="full name">
+            <br>
+            <br>
+            <label for="ccnum">Credit card number</label><br>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+            <br>
+            <br>
+            <label for="expmonth">Exp Month</label><br>
+            <input type="text" id="expmonth" name="expmonth" placeholder="month">
+            <br>
+            <br>
+            <label for="expyear">Exp Year</label><br>
+            <input type="text" id="expyear" name="expyear" placeholder="year">
+            <br>
+            <br>
+            <label for="cvv">CVV</label><br>
+            <input type="text" id="cvv" name="cvv" placeholder="cvv"><br><br>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label><br><br></div>
+        <br>
+        <button class="button1" onclick="alert('Your order is placed!')">Place Order</button>
+
+        <div class="cartbox">
+        <h4>Cart
+            <span class="price" style="color: black"></span>
+        </h4>
+        <p><span id="result"></span></a> <span class="price"></span></p>
+        <p><span id="result1"></span></a> <span class="price"></span></p>
+        <p><span id="result2"></span></a> <span class="price"></span></p>
+        <p><span id="result3"></span></a> <span class="price"></span></p>
+        <p><span id="result4"></span></a> <span class="price"></span></p>
+        <p><span id="result5"></span></a> <span class="price"></span></p>
+        <p><span id="result6"></span></a> <span class="price"></span></p>
+        <p><span id="result7"></span></a> <span class="price"></span></p>
+        <p><span id="result8"></span></a> <span class="price"></span></p>
+        <p><span id="result9"></span></a> <span class="price"></span></p>
+        <script>
+            document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+            document.getElementById("result1").innerHTML=localStorage.getItem("textvalue1");
+            document.getElementById("result2").innerHTML=localStorage.getItem("textvalue2");
+            document.getElementById("result3").innerHTML=localStorage.getItem("textvalue3");
+            document.getElementById("result4").innerHTML=localStorage.getItem("textvalue4");
+            document.getElementById("result5").innerHTML=localStorage.getItem("textvalue5");
+            document.getElementById("result6").innerHTML=localStorage.getItem("textvalue6");
+            document.getElementById("result7").innerHTML=localStorage.getItem("textvalue7");
+            document.getElementById("result8").innerHTML=localStorage.getItem("textvalue8");
+            document.getElementById("result9").innerHTML=localStorage.getItem("textvalue9");
+            </script>
+          <hr>
+          <p>Total = <span class="price" style="color:black"><b></b></p>
+    </div>
+</body>
+</html>

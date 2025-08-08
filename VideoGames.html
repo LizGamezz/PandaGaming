@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                font: Georgia;
+                background-color: rgb(0,168,243);
+            }
+            .tabs {
+                font: Georgia;
+                font-size: 25px;
+                background-color: white;
+                border: lightgrey;
+            }
+            .tab1 { grid-area: Home; }
+            .tab2 { grid-area: Store; }
+            .tab3 { grid-area: FAQ/Inquiry; }
+            .tab4 { grid-area: Cart; }
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                'Home Store FAQ/Inquiry Cart';
+                margin: 0px 222px 5px 223px;
+            }
+            .box {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box1 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box2 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box3 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box4 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box5 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box6 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box7 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box8 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box9 {
+                font: Georgia;
+                padding: 50px;
+            }
+            .box:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+                
+            }
+            .box1:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box2:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box3:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box4:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box5:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box6:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box7:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box8:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+            .box9:hover {
+                font: Georgia;
+                padding: 20px;
+                background-color: rgba(245, 245, 245, 0.705);
+                border-radius: 10px;
+            }
+   
+        </style>
+        <title>Video Games</title>
+        <script>
+            function passvalues()
+            {
+                var firstname="Destiny";
+                localStorage.setItem("textvalue",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues1()
+            {
+                var firstname="Destiny 2";
+                localStorage.setItem("textvalue1",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues2()
+            {
+                var firstname="Fallout";
+                localStorage.setItem("textvalue2",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues3()
+            {
+                var firstname="Fallout 2";
+                localStorage.setItem("textvalue3",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues4()
+            {
+                var firstname="Fallout 3";
+                localStorage.setItem("textvalue4",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+            function passvalues5()
+            {
+                var firstname="Hogwarts";
+                localStorage.setItem("textvalue5",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues6()
+            {
+                var firstname="Horizon 1";
+                localStorage.setItem("textvalue6",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues7()
+            {
+                var firstname="Horizon 2";
+                localStorage.setItem("textvalue7",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues8()
+            {
+                var firstname="Super Mario 64";
+                localStorage.setItem("textvalue8",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+
+            function passvalues9()
+            {
+                var firstname="Minecraft";
+                localStorage.setItem("textvalue9",firstname);
+                alert ("Added to Cart!");
+                return false;
+            }
+        </script>
+    </head>
+    <body><center>
+        <img src="PandaGaming.png" alt="Logo" style = "position: center">
+        <div class="grid-container">
+        <div class="tabs">
+            <a class="tab1" href="Home.html">Home</a>
+            <a class="tab2" href="VideoGames.html">Store</a>
+            <a class="tab3" href="faqinquiry.html">FAQ/Contact</a>
+            <a class="tab4" href="Cart.html">Cart</a>
+        </div>
+    </div>
+        <h1>Video Games</h1>
+    <table>
+        <tr>
+            <th>
+                <div class="box">
+                <img src="Destiny1.jpg" alt="Destiny" width="200" height="300" style = "position: center">
+                <p>Destiny</p> 
+                <p class="price">$15.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps3">PS3</option>
+                    <option value="ps4">PS4</option>
+                    <option value="xbox360">Xbox 360</option>
+                    <option value="xboxone">Xbox One</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues();">Add to cart</button>
+                </form></p></div></th>
+         
+        
+            <th>
+                <div class="box1">
+                <img src="Destiny2.jpg" alt="Destiny 2" width="200" height="300" style = "position: center">
+                <p>Destiny 2</p> 
+                <p class="price">$20.00</p> 
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps4">PS4</option>
+                    <option value="xboxone">Xbox One</option>
+                    <option value="windows">Windows</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues1();">Add to cart</button>
+                </form></p></div></th>
+        
+        
+            <th>
+                <div class="box2">
+                <img src="Fallout.jpg" alt="Fallout" width="200" height="300" style = "position: center">
+                <p>Fallout</p> 
+                <p class="price">$10.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="1">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="windows">Windows</option>
+                    <option value="macos">Mac OS</option>
+                    <option value="macosx">Mac OS X</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues2();">Add to cart</button>
+                </form></p></div></th>
+        
+        
+            <th>
+                <div class="box3">
+                <img src="Fallout2.jpg" alt="Fallout 2" width="200" height="300" style = "position: center">
+                <p>Fallout 2</p> 
+                <p class="price">$15.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="1">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="windows">Windows</option>
+                    <option value="macosx">Mac OS X</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues3();">Add to cart</button>
+                </form></p></div></th>
+         
+        
+            <th>
+                <div class="box4">
+                <img src="Fallout3.png" alt="Fallout 3" width="200" height="300" style = "position: center">
+                <p>Fallout 3</p> 
+                <p class="price">$25.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps3">PS3</option>
+                    <option value="windows">Windows</option>
+                    <option value="xbox360">Xbox 360</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues4();">Add to cart</button>
+                </form></p></div></th>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="box5">
+                <img src="Hogwarts.jpg" alt="Hogwarts" width="200" height="300" style="position: center">
+                <p>Hogwarts Legacy</p> 
+                <p class="price">$70.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps4">PS4</option>
+                    <option value="ps5">PS5</option>
+                    <option value="xboxone">Xbox One</option>
+                    <option value="xboxxs">Xbox X/S</option>
+                    <option value="windows">Windows</option>
+                    <option value="nintendo">Nintendo Switch</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues5();">Add to cart</button>
+                </form></p></div></th>
+
+        
+            <th>
+                <div class="box6">
+                <img src="Horizon.jpg" alt="Horizon" width="200" height="300" style="position: center">
+                <p>Horizon: Zero Dawn</p> 
+                <p class="price">$20.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps4">PS4</option>
+                    <option value="windows">Windows</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues6();">Add to cart</button>
+                </form></p></div></th>
+         
+           <th>
+                <div class="box7">
+                <img src="Horizon2.jpg" alt="Horizon 2" width="200" height="300" style="position: center">
+                <p>Horizon: Forbidden West</p> 
+                <p class="price">$70.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="ps4">PS4</option>
+                    <option value="ps5">PS5</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues7();">Add to cart</button>
+                </form></p></div></th>
+        
+            <th>
+                <div class="box8">
+                <img src="SuperMario.jpg" alt="Super Mario 64" width="200" height="300" style="position: center">
+                <p>Super Mario 64</p> 
+                <p class="price">$40.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="nintendo">Nintendo 64</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues8();">Add to cart</button>
+                </form></p></div></th>
+        
+            <th>
+                <div class="box9">
+                <img src="Minecraft.jpg" alt="Minecraft" width="200" height="300" style="position: center">
+                <p>Minecraft</p> 
+                <p class="price">$25.00</p>
+                <select class="quantity" name="quantity" style="position:relative">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                <select class="platform" name="platform" style="position:relative">
+                    <option value="windows">Windows</option>
+                    <option value="macos">Mac OS</option>
+                    <option value="linux">Linux</option>
+                </select>
+                <p><form action="Cart.html">
+                    <button type="button" style="position:relative" id="addToCart" onclick="passvalues9();">Add to cart</button>
+                </form></p></div></th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</center>
+</body>
+</html>
